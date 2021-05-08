@@ -69,6 +69,14 @@ namespace Lab9
             averageError.Text = matError.ToString();
             varienceError.Text = dispError.ToString();
             chart1.Series[0].IsValueShownAsLabel = true;
+            if (xiRes > 11.07)
+            {
+                xiLabel.Text = xiRes + " > 11.07 is true";
+            }
+            else
+            {
+                xiLabel.Text = xiRes + " > 11.07 is false";
+            }
         }
 
         private List<double> Count(int d, double prob)
